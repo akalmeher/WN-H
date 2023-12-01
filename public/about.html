@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About WN/H</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About WN/H</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: 'PTelegraf', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2ece2;
+            background-image: linear-gradient(
+                to bottom, 
+                #7c8f9a 58%, 
+                #f2ece2 42%
+            );
+        }
+        nav {
+            background-color: #7c8f9a;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .nav-container a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px; 
+            font-size: 1.2em; 
+            transition: background-color 0.3s; 
+        }
+        .nav-container a:hover {
+            text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+            color: rgb(129, 76, 134);
+        }
+        .nav-container a.active {
+            text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+            color: rgb(129, 76, 134);
+        }
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .text-container h1 {
+            flex-basis: 600px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            flex: 1;
+            max-width: 600px; 
+            margin-left: 250px;
+            font-size: xx-large;
+            color: #f2ece2;
+        }
+        .text-container p {
+            flex: 1;
+            max-width: 600px;
+            margin-left: 250px;
+            font-size: x-large;
+            color: #f2ece2;
+        }
+        .text-container h1,
+        .text-container h3,
+        .text-container p {
+            text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.3);
+        }
+        .bottom-half h1 {
+            flex-basis: 600px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            flex: 1;
+            max-width: 600px; 
+            margin-left: 250px;
+            font-size: xx-large;
+            color: #343641;
+        }
+        .bottom-half p {
+            flex: 1;
+            max-width: 600px;
+            margin-left: 250px;
+            font-size: x-large;
+            color: #343641;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 35px; 
+            margin-bottom: 35px; 
+        }
+
+        .image-container img {
+            width: auto; 
+            max-width: 110%; 
+            height: auto; 
+        }
+        .copyright {
+            width: 100%; 
+            padding-top: 20px; 
+            margin-left: 0; 
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About WN/H</a>
+            <a href="aboutdev.html">About Devs</a>
+            <a href="faq.html">FAQ</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="cbinterface.html">WN/H Chat</a>
+        </div>
+    </nav>
+    <div class="content-container">
+        <div class="text-container">
+            <h1>A Job Search Engine for youth like us screaming "We Need Help!" Using AI model to simplify the dreading process.</h1>
+            <div class="text-content">
+                <p>Our smart chatbot simplifies your quest for the perfect job by analyzing your skills and preferences, providing real-time assistance, and ensuring your data's security. Say hello to a brighter career future with us!</p>
+            </div><br><br>
+            <div class="bottom-half">
+                <h1>Project by WN/H</h1>
+                <div class="group-members">
+                    <p>Ammar Almeher<br>Fayeeza Shaikh<br>Somaya Furkhunda</p>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2023 WN/H. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="images/WalkingRobot.png" alt="Walking Robot Art">
+        </div>
+    </div>
+</body>
+</html>

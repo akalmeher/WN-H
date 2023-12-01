@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - WN/H</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: 'PTelegraf', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2ece2;
+            align-items: center;
+        }
+
+        nav {
+            background-color: #7c8f9a;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .nav-container a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px; 
+            font-size: 1.2em; 
+            transition: background-color 0.3s; 
+        }
+        .nav-container a:hover {
+            text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+            color: rgb(129, 76, 134);
+        }
+        .nav-container a.active {
+            text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+            color: rgb(129, 76, 134);
+        }
+
+        header h1 {
+            text-align: center;
+            color: #44332c;
+        }
+
+        .faq-container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .faq {
+            position: relative;
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .faq h2 {
+            color: #333;
+        }
+
+        .faq p {
+            color: #666;
+            max-width: 1280px;
+        }
+
+        .faq-answer {
+            display: none;
+            font-style: italic;
+        }
+
+        .faq-toggle {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%); 
+            right: 10px; 
+            background: none;
+            border: none;
+            font-size: 2em; 
+            cursor: pointer;
+            margin-right: 20px;
+        }
+
+        .copyright {
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            color: #44332c;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="about.html">About WN/H</a>
+            <a href="aboutdev.html">About Devs</a>
+            <a href="faq.html" class="active">FAQ</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="cbinterface.html">WN/H Chat</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+
+    <section class="faq-container">
+        <div class="faq">
+            <button class="faq-toggle">+</button>
+            <h2>What is the WN/H AI Chatbot?</h2>
+            <p class="faq-answer">The WN/H AI Chatbot is an intelligent digital assistant designed to streamline and simplify your job search process. Using advanced AI algorithms, it helps match you with suitable job opportunities based on your skills, experience, and preferences.</p>
+        </div>
+        <div class="faq">
+            <button class="faq-toggle">+</button>
+            <h2>How does the WN/H AI Chatbot work?</h2>
+            <p class="faq-answer">Our chatbot analyzes your input, such as your career interests, skills, and work experience, to recommend job listings that best fit your profile. It can also answer questions about specific job roles, provide interview tips, and offer guidance on resume building.</p>
+        </div>
+        <div class="faq">
+            <button class="faq-toggle">+</button>
+            <h2>Is the WN/H AI Chatbot free to use?</h2>
+            <p class="faq-answer">Yes, the WN/H AI Chatbot is completely free for job seekers. Our goal is to help you find the right job opportunity without any cost.</p>
+        </div>
+        <div class="faq">
+            <button class="faq-toggle">+</button>
+            <h2>Can the WN/H AI Chatbot help me prepare for interviews?</h2>
+            <p class="faq-answer">Absolutely! The chatbot offers a range of resources for interview preparation, including common interview questions, tips for answering effectively, and advice on presenting yourself professionally.</p>
+        </div>
+        <div class="faq">
+            <button class="faq-toggle">+</button>
+            <h2>How do I get started with the WN/H AI Chatbot?</h2>
+            <p class="faq-answer">To get started, simply access the chatbot on our website and begin interacting with it. You can start by sharing what kind of job you're looking for or asking any job-related questions you have.</p>
+        </div>
+        <div class="faq">
+            <button class="faq-toggle">+</button>
+            <h2>Is my personal information secure with the WN/H AI Chatbot?</h2>
+            <p class="faq-answer">We prioritize your privacy and security. Any personal information shared with the chatbot is encrypted and used solely for the purpose of enhancing your job search experience.</p>
+        </div>
+        <div class="faq">
+            <button class="faq-toggle">+</button>
+            <h2>Can the chatbot help me with jobs in a specific location?</h2>
+            <p class="faq-answer">Yes, you can specify your preferred job location, and the chatbot will tailor its job recommendations based on the geographical area you're interested in.</p>
+        </div>
+        <div class="faq">
+            <button class="faq-toggle">+</button>
+            <h2>What if I don't find suitable job recommendations from the chatbot?</h2>
+            <p class="faq-answer">If you're not finding what you're looking for, we recommend refining your profile details or exploring additional resources provided by the chatbot. You can also reach out to our support team for further assistance.</p>
+        </div>
+        <div class="faq">
+            <button class="faq-toggle">+</button>
+            <h2>Can I provide feedback on the job recommendations given by the chatbot?</h2>
+            <p class="faq-answer">Yes, your feedback is valuable to us. You can provide feedback directly through the chat interface, which helps us to improve our service and offer more accurate job recommendations in the future.</p>
+        </div>
+        <div class="faq">
+            <button class="faq-toggle">+</button>
+            <h2>Who can I contact for technical support or assistance with the chatbot?</h2>
+            <p class="faq-answer">For any technical issues or inquiries about using the chatbot, please find our contact info in <a href="aboutdev.html">About Devs</a>. We are here to assist you.</p>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>&copy; 2023 WN/H. All Rights Reserved.</p>
+    </div>
+</body>
+<script>
+    document.querySelectorAll('.faq').forEach(faq => {
+        faq.querySelector('.faq-toggle').addEventListener('click', () => {
+            const answer = faq.querySelector('.faq-answer');
+            const toggleBtn = faq.querySelector('.faq-toggle');
+
+            if(answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+                toggleBtn.textContent = '-';
+            } else {
+                answer.style.display = 'none';
+                toggleBtn.textContent = '+';
+            }
+        });
+    });
+</script>
+
+</html>

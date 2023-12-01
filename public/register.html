@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create an account</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: 'PTelegraf', Arial, sans-serif;
+            background-color: #504d54; /* Dark background color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .welcome-message {
+            color: #ffffff;
+            text-align: center; /* Center the text */
+            margin-bottom: 20px; /* Spacing between the heading and the card */
+        }
+        .registration-container {
+            background-color: #44332c; /* Card background color */
+            padding: 40px;
+            border-radius: 20px; /* Rounded corners for the card */
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for card */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center-align children */
+        }
+        a {
+            color: #ffffff;
+            /* text-decoration: none; */
+        }
+        input {
+            width: 100%; /* Adjust width to account for padding */
+            padding: 15px;
+            margin: 10px auto; /* Center the element horizontally */
+            border-radius: 30px; /* Rounded corners for input fields */
+            border: none;
+            box-sizing: border-box; /* Include padding and border in the element's width */
+            display: block;
+            font-family: 'PTelegraf', Arial, sans-serif;
+        }
+        .register-button {
+            width: 80%;
+            padding: 15px;
+            border-radius: 15px;
+            border: none;
+            background-color: #cc9566; /* Button color */
+            color: #ffffff;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            box-sizing: border-box;
+            font-family: 'PTelegraf', Arial, sans-serif;
+        }
+        .form-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .copyright {
+            color: #ffffff;
+            text-align: center;
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-wrapper">
+        <div class="welcome-message">
+            <h1>Welcome to WN/H!<br>Create an account</h1>
+        </div>
+        <form id="registrationForm" class="registration-container">
+            <input type="text" id="firstName" name="firstName" placeholder="First Name">
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+            <input type="email" id="email" name="email" placeholder="Email">
+            <input type="text" id="username" name="username" placeholder="Username">
+            <input type="password" id="password" name="password" placeholder="Create a password">
+            <input type="password" id="verifyPassword" name="verifyPassword" placeholder="Verify password">
+            <button type="submit" class="register-button">Let's do this!</button>
+        </form>
+        <p><a href='index.html'>Back to homepage</a></p>
+    </div>
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            var formData = new FormData(this);
+            var object = {};
+            formData.forEach(function(value, key){
+                object[key] = value;
+            });
+            var json = JSON.stringify(object);
+
+            fetch('/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: json
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok: ' + response.statusText);
+                }
+                return response.text();
+            })
+            .then(data => {
+                console.log(data);
+                // Redirect to cbinterface.html on successful registration
+                window.location.href = 'cbinterface.html';
+            })
+            .catch(error => {
+                console.error('There has been a problem with your fetch operation:', error);
+                alert('Registration failed.');
+            });
+        });
+    </script>
+    <div class="copyright">
+        &copy; 2023 WN/H. All Rights Reserved.
+    </div>
+</body>
+</html>

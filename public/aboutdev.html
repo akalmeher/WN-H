@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About The Developers</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+        body {
+
+            font-family: 'PTelegraf', Arial, sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+            background-color: #f2ece2;
+
+        }
+
+        nav {
+            background-color: #7c8f9a;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .nav-container a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px; 
+            font-size: 1.2em; 
+            transition: background-color 0.3s; 
+        }
+        .nav-container a:hover {
+            text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+            color: rgb(129, 76, 134);
+        }
+        .nav-container a.active {
+            text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+            color: rgb(129, 76, 134);
+        }
+
+        header {
+
+            background-color: #7c8f9a;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 1em;
+
+            font-size: x-large;
+
+            text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.3);
+
+        }
+
+        section {
+
+            display: flex;
+
+            justify-content: center;
+
+            padding: 2em;
+
+        }
+
+        h2 {
+            font-weight: normal;
+        }
+
+        .about-us {
+            text-size-adjust: normal;
+        }
+
+        #developers {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+        }
+
+        .developer {
+            display: flex;
+            flex-direction: row; /* Stack image and description vertically */
+            align-items: center; /* Center-align items */
+            text-align: left; /* Align text to the left */
+            max-width: 1500px; /* Set a max width for the text */
+            margin-bottom: 40px; /* Add space between developer profiles */
+            padding: 20px; /* Optional: padding inside the boxes */
+            width: 120%; /* Use a percentage width for responsiveness */
+        }
+
+        img {
+            max-width: 250px; /* Adjust the image size */
+            border-radius: 75%;
+            padding: 5%;
+        }
+
+        .developer-info h1{
+            margin: 0;
+            padding: 0 10px;
+            font-size: xx-large;
+        }
+        .developer-info h2 {
+            margin: 0;
+            padding: 0 10px;
+            font-weight: 200;
+        }
+
+        .developer-info p {
+            margin: 0;
+            padding: 0 10px;
+            font-size: larger;
+            line-height: 36px;
+        }
+
+        footer {
+
+            background-color: #7c8f9a;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 1em;
+
+            position: fixed;
+
+            bottom: 0;
+
+            width: 100%;
+
+            height: 1%
+
+        }
+ 
+        footer p {
+
+            margin: 0px;
+
+            margin-right: 45px;
+            
+        }
+</style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="about.html">About WN/H</a>
+            <a href="aboutdev.html" class="active">About Devs</a>
+            <a href="faq.html">FAQ</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="cbinterface.html">WN/H Chat</a>
+        </div>
+    </nav>
+
+ 
+
+    <header>
+
+        <h1>The Developers behind WN/H</h1>
+
+
+    </header>
+
+ 
+
+    <section id="about-us">
+
+        <h2 style="font-style: italic;">~A group of passionate developers dedicated to creating amazing web experiences~<h2>
+
+    </section>
+
+ 
+
+    <section id="developers">
+
+        <div class="developer">
+
+            <img src="images/developer1.jpg" alt="Fayeeza">
+
+            <div class="developer-info">
+
+                <h1>Fayeeza Shaikh (she/her)</h1><br>
+                <h2>Major: BSc in Biology</h2><br>
+
+                <p>
+
+                    Hello all, I am Fayeeza Shaikh, senior majoring in Biology with a physiology concentration and minors in Computing Applications, Chemistry, and Computer Science at SFSU! <br>
+                    I reside in SF and I’m interested in pursuing computational biology careers with interests in Machine Learning and AI! <br>
+                    I’m very excited to see this dream of mine, Chatbot for Job search, coming to life. <br>
+                    I thought of this idea because I’m graduating in May 2024 and I was searching for jobs myself, making me think of this idea for me and for students like me! <br>
+                    Feel free to contact me at <a href=mailto:fayeeza2002@gmail.com>fayeeza2002@gmail.com</a> and <a href=mailto:fshaikh5@mail.sfsu.edu>fshaikh5@mail.sfsu.edu</a>.
+
+                </p>
+
+            </div>
+
+        </div>
+
+ 
+
+        <div class="developer">
+
+            <img src="images/developer2.jpg" alt="Ammar">
+
+            <div class="developer-info">
+
+                <h1>Ammar Almeher (he/him)</h1><br>
+                <h2>Major: BSc in Computer Science</h2><br>
+
+                <p>
+
+                    Hi! I'm Ammar Almeher, an international transfer and a junior majoring in Computer Science at SFSU. <br>
+                    I'm interested in AI development and visual interactive interfaces (UI/UX design & Front-end development). <br>
+                    Thank you for using our chatbot, and I'm excited to be a part of your job search journey!<br>
+                    Github: <a href="https://github.com/akalmeher">akalmeher</a><br>
+                    Linkedin: <a href="linkedin.com/in/ammaralmeher">Ammar's Linkedin Profile</a><br>
+                    Email: <a href=mailto:ammar.almeher@gmail.com>ammar.almeher@gmail.com</a><br>
+                    SFSU Email: <a href=mailto:aalmeher@mail.sfsu.edu>aalmeher@mail.sfsu.edu</a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+ 
+
+        <div class="developer">
+
+            <img src="images/developer3.jpg" alt="Somaya">
+
+            <div class="developer-info">
+
+               <h1>Somaya Furkhunda (she/her)</h1><br>
+               <h2>Major: BSc in Computer Science</h2><br>
+
+                <p>
+
+                    My name is Somaya Furkhunda, and I'm a junior majoring in computer science at SF STATE University. <br>
+                    I reside in the East Bay, specifically on a small island named Alameda.<br>
+                    Since beginning my university journey, I've discovered a strong preference for programming over coding. <br>
+                    I hope this chatbot can make the lives of students like me easier. <br>
+                    Personal Gmail: <a href=mailto:somaya.furkhunda@gmail.com>somaya.furkhunda@gmail.com</a> <br>
+                    School email: <a href=mailto:sfurkhunda@sfsu.edu>sfurkhunda@sfsu.edu</a>.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+ 
+
+    <footer>
+
+        <p style="font-size: 14px;">&copy; 2023 WN/H. All Rights Reserved.</p>
+
+    </footer>
+
+ 
+
+</body>
+
+</html>

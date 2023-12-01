@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'PTelegraf';
+    src: url('PPTelegraf-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTelegraf';
+    src: url('PPTelegraf-UltraLight.otf') format('opentype');
+    font-weight: 200; /* UltraLight or Thin */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTelegraf';
+    src: url('PPTelegraf-UltraBold.otf') format('opentype');
+    font-weight: 800; /* UltraBold or Heavy */
+    font-style: normal;
+}
+
+body {
+    font-family: 'PTelegraf', Arial, sans-serif;
+}
+
