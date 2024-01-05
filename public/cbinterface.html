@@ -105,13 +105,7 @@
             align-items: flex-start;
             margin-bottom: 10px;
             margin-top: 10px;
-        }
-
-        .message-icon {
-            width: 64px;
-            height: auto;
-            margin-right: 10px;
-            border-radius: 30%;
+            width: 100%; /* Ensure the message takes the full width */
         }
 
         .message-content {
@@ -120,6 +114,16 @@
             padding: 15px;
             position: relative;
             flex-grow: 1;
+            word-wrap: break-word; /* Breaks long words to prevent overflow */
+            word-break: break-word; /* Ensures words break properly */
+            max-width: calc(100% - 74px); /* Adjusts width considering the icon's width and margin */
+        }
+
+        .message-icon {
+            width: 64px;
+            height: auto;
+            margin-right: 10px;
+            border-radius: 30%;
         }
 
         .message-header {
@@ -500,10 +504,7 @@
         scrollToBottom(chatWindow);
     }
 
-    // When sending a message, you would call this function like so:
-    addChatMessage('user-message', 'This is a message from the user.', true);
-    // And for bot messages:
-    addChatMessage('bot-message', 'This is a message from the bot.', false);
+    addChatMessage('bot-message', 'Welcome to WN/H Chatbot! How can I help you today?', false);
 
     // Show the icon when the user scrolls up
     document.querySelector('.chat-messages').addEventListener('scroll', function() {
